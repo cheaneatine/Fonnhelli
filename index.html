@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fonnhelli</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <a href="/Fonnhelli.html">
+                <h2 class="logo"><img src="/Photos/logo.png" style="width: 120px; height: 100px;"></h2>
+            </a>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="/Videos/Vinyl.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Stream Music</h2>
+            <h3>Anywhere</h3>
+            <a href="/Registration/Form.html">Sign In</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="https://twitter.com/Fonnhelli?s=20"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/fonnhelli/"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="/Registration/Form.html">Log In</a></li>
+            <li><a href="/About/About.html">About</a></li>
+            <li><a href="/Contact/Contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
